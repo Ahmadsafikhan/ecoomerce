@@ -1,0 +1,30 @@
+{
+  "name": "techmania",
+  "version": "1.0.0",
+  "description": "Ecommerce application built with the MERN Stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node Backend/server.js",
+    "server": "nodemon Backend/server.js",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "author": "safi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "stripe": "^13.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
